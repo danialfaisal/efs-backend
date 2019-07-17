@@ -165,7 +165,7 @@ JWT_AUTH = {
 CORS_ORIGIN_WHITELIST = (
     'localhost:8080',
     '127.0.0.1:8080'
-    'https://efs-backend.herokuapp.com/'
+    'https://efs-frontend.herokuapp.com'
 )
 
 CORS_ORIGIN_ALLOW_ALL = True
