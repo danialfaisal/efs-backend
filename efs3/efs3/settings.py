@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -195,9 +194,9 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-LOGIN_REDIRECT_URL = '/home'
-LOGOUT_REDIRECT_URL = '/home'
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# LOGIN_REDIRECT_URL = ''
+LOGOUT_REDIRECT_URL = '/admin'
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 try:
     from .local_settings import *
