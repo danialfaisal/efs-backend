@@ -33,9 +33,3 @@ urlpatterns = [
     url(r'^api/stocks/$', views.stock_list),
     url(r'^api/stocks/(?P<pk>[0-9]+)$', views.getStock)
 ]
-
-
-
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL,
-#                           document_root=settings.MEDIA_ROOT)
